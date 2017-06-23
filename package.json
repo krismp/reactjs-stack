@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow && jest --coverage"
+    "test": "eslint src && flow && jest --coverage",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,6 +26,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.1",
     "eslint-plugin-react": "^7.0.1",
     "flow-bin": "^0.48.0",
+    "husky": "^0.14.0",
     "jest": "^20.0.4"
   }
 }
