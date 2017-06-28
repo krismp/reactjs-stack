@@ -30,7 +30,7 @@ export default {
     hot: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
-    }
+    },
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
