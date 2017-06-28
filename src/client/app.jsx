@@ -2,6 +2,10 @@
 
 import React from 'react'
 
-const App = () => <h1>React FTW!</h1>
+const App = () => {
+    return <div>
+        <h1>React FTW!</h1>
+    </div>
+}
 
 export default App
