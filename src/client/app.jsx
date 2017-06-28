@@ -2,14 +2,15 @@
 
 import React from 'react'
 
+import HelloButton from './container/hello-button'
+import Message from './container/message'
+import { APP_NAME } from '../shared/config'
+
 const App = () =>
   (<div>
-    <h1>React FTW!</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
-      reprehenderit, quidem. Ipsa, vero at quam accusamus accusantium dolor
-      ullam porro iste. Temporibus quis dolor rem, libero ipsum ullam incidunt quo.
-    </p>
+    <h1>{APP_NAME}</h1>
+    <Message />
+    <HelloButton />
   </div>)
 
 export default App
